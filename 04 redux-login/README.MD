@@ -1,4 +1,4 @@
-## 安装
+## 运行
 
 ``` bash
 $ cd bakend
