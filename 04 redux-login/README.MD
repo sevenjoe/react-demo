@@ -1,7 +1,7 @@
 ## 运行
 
 ``` bash
-$ cd bakend
+$ cd backend
 $ npm install
 $ createdb reduxlogin
 $ knex migrate:latest
