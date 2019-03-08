@@ -6,7 +6,7 @@ $ npm install
 $ createdb reduxlogin
 $ knex migrate:latest
 $ npm start
-$ cd client
+$ cd front
 $ npm install
 $ npm start
 ```
