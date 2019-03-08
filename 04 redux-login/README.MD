@@ -1,11 +1,12 @@
 ## 安装
 
 ``` bash
+$ cd bakend
 $ npm install
-$ npm start
-$ cd client
-$ rm yarn.lock && yarn install
-$ yarn start
 $ createdb reduxlogin
 $ knex migrate:latest
+$ npm start
+$ cd client
+$ npm install
+$ npm start
 ```
