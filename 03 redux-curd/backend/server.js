@@ -101,11 +101,11 @@ mongodb.MongoClient.connect(dbUrl, (err, client) => {
 
     //访问没有定义的路由走这里
     app.use((req, res) => {
-        res.status(301).redirect('/games')/*.json({
+        res.status(404).json({
             errors: {
                 global: "Still working on it.Please try again later than when we implement it"
             }
-        })*/
+        })
     });
 
     app.listen(8080, () => console.log('Server is running on localhost:8080'))
