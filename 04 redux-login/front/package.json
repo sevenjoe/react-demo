@@ -1,31 +1,39 @@
 {
-  "name": "redux-login",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon --watch server --exec babel-node server/index.js ",
-    "build": "webpack"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bcrypt": "^3.0.4",
-    "bluebird": "^3.5.3",
-    "body-parser": "^1.18.3",
-    "bookshelf": "^0.14.2",
-    "express": "^4.16.4",
-    "jsonwebtoken": "^8.4.0",
-    "knex": "^0.16.3",
-    "lodash": "^4.17.11",
-    "pg": "^7.8.0",
-    "validator": "^9.4.1"
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "jwt-decode": "^2.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "shortid": "^2.2.14"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "nodemon": "^1.18.10"
-
-  }
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6"
+  },
+  "proxy": "http://localhost:6060"
 }
